@@ -11,4 +11,16 @@ candidates_V2.csv: csv file that contains an extended set of candidate locations
 evaluation script: the evaluation script that is used in the LUNA16 framework
 lung segmentation: a directory that contains the lung segmentation for CT images computed using automatic algorithms
 additional_annotations.csv: csv file that contain additional nodule annotations from our observer study. The file will be available soon
-![image](https://github.com/dileep99999/LUNA/assets/108917385/dccfb6e3-4828-4aec-af85-1f9d9e94e506)
+# Data Augmentation
+Augment the nodule image data by using different techniques like
+                     	1. Rotations
+                    	2. ZCA Whitening
+			3. Shifting (Width, Height, Depth)
+			4. Zooming (zoom in & zoom out) 
+			5. Flipping (Horizontal, vertifcal and depth)
+Feature Standardization - standardize pixel values across the entire dataset.
+Random Rotations - sample data may have varying and different rotations in the scene.
+Random Shifts - images may not be centered in the frame. They may be off-center in a variety of different ways.
+Random Flips - improve performance on large and complex problems is to create random flips of images in your training data.
+![image](https://github.com/dileep99999/LUNA/assets/108917385/5d81499d-c3e0-4fca-b7ef-745dd61f529a)
+
