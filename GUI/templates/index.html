@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+.gh{
+height:70vh;
+display:flex;
+justify-content:center;
+}
+body {
+background-image:url("https://t4.ftcdn.net/jpg/02/20/05/91/360_F_220059159_yq3Pd4CsZ6idyMihS2uYEyfSWPxKMrSB.jpg") ;
+background-repeat: no-repeat;
+background-size: 1350px;
+background-position-x: center;
+}
+h1{
+   color:#0949fa;
+}
+button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button {background-color: #FEBB75;} /* Green */
+</style>
+</head>
+<body><center>
+<div class="gh">
+<form method="POST" action="/predict">
+<h1>Lung Nodule Detection</h1><br>
+<label for="img"><font size="5">MHD File</font></label>
+<input type="file" id="img" name="img" accept="All files/*">
+<br><br>
+<label for="imga"><font size="5">RAW File</font></label>
+<input type="file" id="imga" name="imga" accept="All files/*">
+<br><br>
+<font size="5">X COORDINATE</font> &nbsp <textarea type="text" name="X" id="X" rows="2" cols="25" placeholder="X coordinate"></textarea>
+<br><br>
+<font  size="5">Y COORDINATE</font> &nbsp <textarea type="text" name="Y" id="Y" rows="2" cols="25" placeholder="Y coordinate"></textarea>
+<br><br>
+<font size="5">Z COORDINATE</font> &nbsp <textarea type="text" name="Z" id="Z" rows="2" cols="25" placeholder="Z coordinate"></textarea>
+<br><br>
+<button type="submit" value="submit" >submit</button>
+<h1>{{res}}</h1>
+</form>
+</div>
+</body></center>
+</html>
